@@ -17,6 +17,7 @@ public class Polynomial
     public double[] coef => Coef;
     public void display()
     {
+        Console.Write("P(x) = ");
         for (int i = 0, j = Degree; i < Degree; i++, j--)
         {
             if (i != Degree - 1)
@@ -130,6 +131,7 @@ public class Polynomial
         {
             Console.Write("{0} ",element);
         }
+            Console.WriteLine("This also means that P({0}) = {1}", methodVal, hornerCoef[hornerCoef.Length - 1]);
         }
     }
 
